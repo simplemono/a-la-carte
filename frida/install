@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+pip install frida-tools # CLI tools
+pip install frida       # Python bindings
