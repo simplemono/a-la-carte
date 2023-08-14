@@ -1,0 +1,9 @@
+#!/bin/bash
+# {:doc "Installs the latest version of Clojure (https://clojure.org/guides/install_clojure#_linux_instructions)"}
+
+set -e
+
+curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
+chmod +x /tmp/linux-install.sh
+sudo /tmp/linux-install.sh
+rm /tmp/linux-install.sh
