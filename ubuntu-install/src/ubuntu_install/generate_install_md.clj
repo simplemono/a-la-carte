@@ -116,7 +116,10 @@
           (map
            :markdown
            (sort-by :name
-                    (:entries w))))))
+                    (filter
+                     ;; Skipping entries which have not been commited yet:
+                     :latest-commit
+                     (:entries w)))))))
 
 (defn write-install-md!
   [w]
