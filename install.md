@@ -1,3 +1,11 @@
+## android-tools-adb
+
+The adb (Android Debug Bridge) of the Android-SDK.
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/SimpleValue/ubuntu-install/d91712705674c4270b74a4f1543e1d7f1684cd6c/android-tools-adb/install' | bash
+```
+
 ## Clojure CLI
 
 Installs the latest version of
