@@ -118,7 +118,7 @@
            (sort-by :name
                     (filter
                      ;; Skipping entries which have not been commited yet:
-                     :latest-commit
+                     (comp seq :latest-commit)
                      (:entries w)))))))
 
 (defn write-install-md!
