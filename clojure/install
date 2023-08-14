@@ -1,5 +1,4 @@
 #!/bin/bash
-# {:doc "Installs the latest version of Clojure (https://clojure.org/guides/install_clojure#_linux_instructions)"}
 
 set -e
 
