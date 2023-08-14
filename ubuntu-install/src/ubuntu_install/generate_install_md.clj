@@ -115,7 +115,9 @@
           "\n"
           (map
            :markdown
-           (sort-by :name
+           (sort-by (comp
+                     str/lower-case
+                     :name)
                     (filter
                      ;; Skipping entries which have not been commited yet:
                      (comp seq :latest-commit)
