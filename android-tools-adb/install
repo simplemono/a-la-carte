@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+sudo apt-get -qq update
+sudo apt-get -y -qq --no-install-recommends install -y android-tools-adb

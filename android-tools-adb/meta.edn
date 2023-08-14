@@ -1,0 +1,2 @@
+{:name "android-tools-adb"
+ :doc "The adb (Android Debug Bridge) of the Android-SDK."}
