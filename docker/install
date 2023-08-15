@@ -18,4 +18,4 @@ apt-get -y -qq --no-install-recommends install docker-ce
 # The next step adds your user to the docker group, so that you can run Docker
 # without using sudo. Please logout and login again afterwards:
 
-usermod -aG docker ${USER} && su - ${USER}
+usermod -aG docker ${USER}
