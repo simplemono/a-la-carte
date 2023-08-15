@@ -6,3 +6,7 @@ cd /tmp
 curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
 chmod +x linux-install.sh
 ./linux-install.sh
+
+# `rlwrap` is required for running `clj` as REPL on the command line:
+apt-get -qq update
+apt-get -y -qq --no-install-recommends install -y rlwrap
