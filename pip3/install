@@ -2,5 +2,5 @@
 
 set -e
 
-sudo apt-get -qq update
-sudo apt-get -y -qq --no-install-recommends install -y python3-pip
+apt-get -qq update
+apt-get -y -qq --no-install-recommends install -y python3-pip
