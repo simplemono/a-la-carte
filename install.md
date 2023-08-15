@@ -12,7 +12,7 @@ Installs the latest version of
 Clojure (https://clojure.org/guides/install_clojure#_linux_instructions)
 
 ```bash
-curl -sS 'https://raw.githubusercontent.com/SimpleValue/ubuntu-install/dc17eb5b2c3b4ddd38747b2a268913de242bfd6f/clojure/install' | bash
+curl -sS 'https://raw.githubusercontent.com/SimpleValue/ubuntu-install/2555ec6605a704704737d2d22be77d84c1f5f4ad/clojure/install' | bash
 ```
 
 ## frida
