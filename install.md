@@ -23,6 +23,14 @@ Dynamic instrumentation toolkit for developers, reverse-engineers, and security 
 curl -sS 'https://raw.githubusercontent.com/SimpleValue/ubuntu-install/dafe5af58096a5f051b8b0e44daaa2c236bae352/frida/install' | bash
 ```
 
+## OpenJDK 20
+
+Installs OpenJDK 20
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/SimpleValue/ubuntu-install/46b211275ce6ea4080a921e01005960e122675de/openjdk-20/install' | bash
+```
+
 ## pip3
 
 Pip is a tool for installing Python packages. Installs pip for Python 3.
