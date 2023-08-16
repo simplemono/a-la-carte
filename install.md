@@ -36,7 +36,7 @@ curl -sS 'https://raw.githubusercontent.com/SimpleValue/unattended-install/dafe5
 Installs git.
 
 ```bash
-curl -sS 'https://raw.githubusercontent.com/SimpleValue/unattended-install/d68104f482b644dc34d601045b59b281dc09ceb5/git/install' | bash
+curl -sS 'https://raw.githubusercontent.com/SimpleValue/unattended-install/8f0c6cd47e375be3aa4d461fa587469fececea3f/git/install' | bash
 ```
 
 ## OpenJDK 20
