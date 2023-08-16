@@ -6,6 +6,15 @@ The adb (Android Debug Bridge) of the Android-SDK.
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/dc17eb5b2c3b4ddd38747b2a268913de242bfd6f/android-tools-adb/install' | bash
 ```
 
+## caddy
+
+Installs caddyserver.com - A fast and extensible multi-platform
+ HTTP/1-2-3 web server with automatic HTTPS
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/4ab9d35b9d037a8dbbe8e9e6978c4dcc43b8fb1b/caddy/install' | bash
+```
+
 ## Clojure CLI
 
 Installs the latest version of
