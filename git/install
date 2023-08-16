@@ -3,4 +3,4 @@
 set -e
 
 apt-get -qq update
-apt-get -y -qq --no-install-recommends install -y git-all
+apt-get -y -qq --no-install-recommends install -y git
