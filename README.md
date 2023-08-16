@@ -48,7 +48,7 @@ curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2555ec6605a704
   project like webinstall.dev or brew.sh requires coordination, and you might not
   get approval for your addition.
 
-- If you need to customize a-la-carte fork it on Github and run the
+- If you need to customize a-la-carte, then fork it on Github and run the
   `./generate-install-md` script to regenerate the [install.md](/install.md), so
   that all `curl -sS 'https://raw.githubusercontent.com/...` URLs point to your
   own Github repository.
@@ -93,3 +93,7 @@ And a `meta.edn` file:
 
 Invoke `./generate-install-md` after you commit the files to regenerate the
 `install.md`.
+
+Feel free to write the `./install` script in a different language than `bash`
+(like [Babashka](https://github.com/babashka/babashka), for example), if you
+already installed the required runtime in your Docker image.
