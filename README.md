@@ -63,6 +63,15 @@ curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2555ec6605a704
 - Breakage is reduced since it is fine to continue to use an old version of the
   script (to create your Docker image).
 
+- The predecessor of this project is
+  [container-image](https://github.com/SimpleValue/container-image), where it
+  was not straight-forward to pick scripts à la carte. Thereby each change
+  triggered a full rebuild of the Dockerfile. This created one large Docker
+  image layer that takes quite a while to download. Therefore you tried to
+  postpone changes to the Docker image of the development environment as long as
+  possible. For the same reason a local build of the Docker image was also not
+  practically, since each change triggered a full rebuild.
+
 ## Usage
 
 Open the [install.md](/install.md) and copy `curl -sS
