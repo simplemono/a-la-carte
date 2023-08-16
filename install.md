@@ -15,6 +15,14 @@ Clojure (https://clojure.org/guides/install_clojure#_linux_instructions)
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2555ec6605a704704737d2d22be77d84c1f5f4ad/clojure/install' | bash
 ```
 
+## dev-user
+
+Adds an user `dev` who is allowed to use `sudo`. Thereby a Docker image must not run with `root` user during development.
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/07dfbcdea76d89374eab4584af8e61bf528fa3ec/dev-user/install' | bash
+```
+
 ## docker
 
 Installs Docker on Ubuntu (based on https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
