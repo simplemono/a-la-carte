@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+useradd -ms /bin/bash dev
+
+# allow `sudo`:
+usermod -aG sudo dev
+apt-get -qq update
+apt-get -y -qq --no-install-recommends install -y sudo
+bash -c "echo 'dev    ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers"
+
+# Create home folder for user:
+mkdir -p /home/dev
+chown -R dev /home/dev

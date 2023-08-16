@@ -1,0 +1,2 @@
+{:name "dev-user"
+ :doc "Adds an user `dev` who is allowed to use `sudo`. Thereby a Docker image must not run with `root` user during development."}
