@@ -1,9 +1,10 @@
-(ns ubuntu-install.generate-install-md
-  (:require [clojure.edn :as edn]
-            [clojure.java.io :as io]
-            [clojure.java.shell :as sh]
-            [clojure.string :as str]
-            ))
+#!/usr/bin/env bb
+
+(require '[clojure.edn :as edn]
+         '[clojure.java.io :as io]
+         '[clojure.java.shell :as sh]
+         '[clojure.string :as str]
+         )
 
 (defn get-meta-edn-files
   [{:keys [dir] :as w}]
@@ -125,7 +126,7 @@
 
 (defn write-install-md!
   [w]
-  (spit "../install.md"
+  (spit "install.md"
         (:install-md w))
   )
 
@@ -142,15 +143,17 @@
 
 (defn generate
   [_params]
-  (process! (atom {:dir "../"})))
+  (process! (atom {:dir "."})))
+
+(generate {})
 
 (comment
-  (seq (get-meta-edn-files "../"))
+  (seq (get-meta-edn-files "."))
 
   (def state
-    (atom {:dir "../"}))
+    (atom {:dir "."}))
 
-  (get-latest-commit "../clojure")
+  (get-latest-commit "./clojure")
 
   (extract-path (get-origin-git-url "."))
 

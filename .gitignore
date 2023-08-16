@@ -4,3 +4,4 @@
 tmp/
 .clj-kondo/
 .lsp/
+.cpcache/
