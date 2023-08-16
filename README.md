@@ -53,6 +53,16 @@ curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2555ec6605a704
   that all `curl -sS 'https://raw.githubusercontent.com/...` URLs point to your
   own Github repository.
 
+- Each `curl -sS 'https://raw.githubusercontent.com/...` in the
+  [install.md](/install.md) refers the most recent git commit of the subfolder,
+  where the `./install` script resides.
+
+- Consequently the git commit of a script only changes, if the script changed.
+  This reduces the number of times you need to reinspect a script.
+
+- Breakage is reduced since it is fine to continue to use an old version of the
+  script (to create your Docker image).
+
 ## Usage
 
 Open the [install.md](/install.md) and copy `curl -sS
