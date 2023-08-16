@@ -74,6 +74,16 @@ own Ubuntu machine, then inspect the script behind the URL beforehand, ensure
 that you trust it, and if it requires `sudo`, then change the call to `curl -sS
 'https://raw.githubusercontent.com/... | sudo bash`.
 
+Regrettably, `curl` and `ca-certificates` are not installed in the official
+Docker image of Ubuntu. Therefore your Dockerfile should start like this:
+
+```
+FROM ubuntu:22.04 as base
+
+RUN apt-get -qq update && apt-get -y -qq --no-install-recommends install -y curl ca-certificates
+
+```
+
 ## Development
 
 The only required script for the project is `./generate-install-md`, which
