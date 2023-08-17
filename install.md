@@ -32,12 +32,12 @@ Adds an user `dev` who is allowed to use `sudo`. Thereby a Docker image must not
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/07dfbcdea76d89374eab4584af8e61bf528fa3ec/dev-user/install' | bash
 ```
 
-## docker
+## docker-ce
 
-Installs Docker on Ubuntu (based on https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
+Installs Docker Community Edition (CE) on Ubuntu (based on https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
 
 ```bash
-curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2ec5ea2ea720de78802468482be9cec1a43df2bd/docker/install' | bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/9aa5cbc72a10fd6f59c0ef873db2a0b6fda4693a/docker-ce/install' | bash
 ```
 
 ## frida
