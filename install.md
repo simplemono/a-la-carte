@@ -40,6 +40,14 @@ Installs Docker Community Edition (CE) on Ubuntu (based on https://www.digitaloc
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/9aa5cbc72a10fd6f59c0ef873db2a0b6fda4693a/docker-ce/install' | bash
 ```
 
+## docker-compose-plugin
+
+The Compose plugin for Docker (https://docs.docker.com/compose/install/linux/#install-using-the-repository)
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/8f65408ba3b0a448ee00c51c3aeb96b511347642/docker-compose-plugin/install' | bash
+```
+
 ## frida
 
 Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers. Learn more at frida.re.
