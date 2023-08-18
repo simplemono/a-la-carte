@@ -1,0 +1,3 @@
+{:name "docker-compose-plugin"
+ :doc "The Compose plugin for Docker (https://docs.docker.com/compose/install/linux/#install-using-the-repository)"
+ }
