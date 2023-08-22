@@ -55,6 +55,3 @@
 (process/shell
  {:dir extracted-path}
  "./install.sh")
-
-(process/shell
- "git lfs install")
