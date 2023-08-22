@@ -75,7 +75,9 @@
     (str "curl -sS '"
          base-url "/"
          (:latest-commit entry) "/"
-         (.getName (.getParentFile meta-edn-file)) "/install' | bash")))
+         (.getName (.getParentFile meta-edn-file)) (str "/install' | "
+                                                        (or (:shell entry)
+                                                            "bash")))))
 
 (defn add-github-install-commands
   [w]
