@@ -64,6 +64,16 @@ Installs git.
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/8f0c6cd47e375be3aa4d461fa587469fececea3f/git/install' | bash
 ```
 
+## git-lfs
+
+Installs [git-lfs](https://git-lfs.com/) based on
+ https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage (requires
+ Babashka).
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/f510f266a4332ffec810e0c2330ccec1e87e94c8/git-lfs/install' | bb
+```
+
 ## OpenJDK 20
 
 Installs OpenJDK 20
