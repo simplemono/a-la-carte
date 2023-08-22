@@ -1,0 +1,4 @@
+{:name "git-lfs"
+ :doc "Installs [git-lfs](https://git-lfs.com/) based on
+ https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage (requires
+ Babashka)."}
