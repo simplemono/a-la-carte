@@ -71,7 +71,7 @@ Installs [git-lfs](https://git-lfs.com/) based on
  Babashka).
 
 ```bash
-curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/f510f266a4332ffec810e0c2330ccec1e87e94c8/git-lfs/install' | bb
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/7be543c3299a5a8c570d73b5e3da456b93242510/git-lfs/install' | bb
 ```
 
 ## OpenJDK 20
