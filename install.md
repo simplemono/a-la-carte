@@ -56,6 +56,14 @@ Dynamic instrumentation toolkit for developers, reverse-engineers, and security 
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/dafe5af58096a5f051b8b0e44daaa2c236bae352/frida/install' | bash
 ```
 
+## gcloud
+
+Installs the Google Cloud SDK (based on: https://cloud.google.com/sdk/docs/install#deb)
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/a5c6a0cc925aae70ba5da6ff11e6d0ff35876e6b/gcloud/install' | bash
+```
+
 ## git
 
 Installs git.
