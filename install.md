@@ -90,6 +90,14 @@ Installs OpenJDK 20
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/46b211275ce6ea4080a921e01005960e122675de/openjdk-20/install' | bash
 ```
 
+## packer
+
+[Packer](https://www.packer.io/) is a tool that lets you create identical machine images for multiple platforms from a single source template. Packer can create golden images to use in image pipelines.
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/f73de88bdf6ec01d7732be9f603f23515963e58f/packer/install' | bash
+```
+
 ## pip3
 
 Pip is a tool for installing Python packages. Installs pip for Python 3.
