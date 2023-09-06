@@ -1,0 +1,2 @@
+{:name "packer"
+ :doc "[Packer](https://www.packer.io/) is a tool that lets you create identical machine images for multiple platforms from a single source template. Packer can create golden images to use in image pipelines."}
