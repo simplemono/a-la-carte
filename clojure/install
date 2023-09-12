@@ -2,7 +2,6 @@
 
 set -e
 
-cd /tmp
 curl -L -O https://github.com/clojure/brew-install/releases/latest/download/linux-install.sh
 chmod +x linux-install.sh
 ./linux-install.sh
