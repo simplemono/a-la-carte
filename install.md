@@ -21,7 +21,7 @@ Installs the latest version of
 Clojure (https://clojure.org/guides/install_clojure#_linux_instructions)
 
 ```bash
-curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2555ec6605a704704737d2d22be77d84c1f5f4ad/clojure/install' | bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/aa29e3ea57a92817446be9a5a81faaca578f217c/clojure/install' | bash
 ```
 
 ## dev-user
