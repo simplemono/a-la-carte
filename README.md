@@ -44,6 +44,17 @@ curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2555ec6605a704
   you can inspect the script beforehand and know that it will not change, when
   you invoke it tomorrow or with a different user agent string.
 
+- However, from a security point of view the best practice is to fork the
+  repository into your own Github account and use `./generate-install-md` to
+  adapt the URLs to your repository. Regrettably, it is [possible to calculate
+  SHA-1 hash
+  collisions](https://www.theregister.com/2017/02/23/google_first_sha1_collision/)
+  (if you have enough money).
+
+- Git also does not prevent to use a SHA-1 as branch name. Luckily, Github does
+  not allow to create or push such branch names. But another Git hosting service
+  may allow this.
+
 - You probably need to install different software than I do. Participating in a
   project like webinstall.dev or brew.sh requires coordination, and you might not
   get approval for your addition.
