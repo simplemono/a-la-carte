@@ -64,6 +64,14 @@ Installs the Google Cloud SDK (based on: https://cloud.google.com/sdk/docs/insta
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/a5c6a0cc925aae70ba5da6ff11e6d0ff35876e6b/gcloud/install' | bash
 ```
 
+## gcsfuse
+
+Installs Cloud Storage FUSE (based on: https://cloud.google.com/storage/docs/gcsfuse-install)
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/83bad9e8bef0f0c85a7d689907c3fcfaddafc36f/gcsfuse/install' | bash
+```
+
 ## git
 
 Installs git.
