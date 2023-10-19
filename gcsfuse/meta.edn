@@ -1,0 +1,2 @@
+{:name "gcsfuse"
+ :doc "Installs Cloud Storage FUSE (based on: https://cloud.google.com/storage/docs/gcsfuse-install)"}
