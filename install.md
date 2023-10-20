@@ -90,6 +90,14 @@ Installs [git-lfs](https://git-lfs.com/) based on
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/d103e9aaa78085ce0bf000cbff6d2d12937db494/git-lfs/install' | bb
 ```
 
+## maven3
+
+Installs the latest version of [Maven3](https://maven.apache.org/) (requires Babashka).
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/60a01eb6466e06e8013120eb598b3246e9e6a1f3/maven3/install' | bb
+```
+
 ## OpenJDK 20
 
 Installs OpenJDK 20

@@ -1,0 +1,89 @@
+;; Installs the latest version of Maven3 (https://maven.apache.org/download.cgi)
+;; Regrettably, they remove older version of Maven3 regulary from the download
+;; server (https://dlcdn.apache.org/maven/maven-3/). This broke Docker image
+;; build processes over and over again. Therefore this script finds out the
+;; latest Maven3 version on its own.
+
+(require '[babashka.http-client :as http]
+         '[clojure.java.io :as io]
+         '[babashka.process :refer [shell]]
+         '[clojure.data.xml :as xml]
+         '[clojure.string :as str]
+         )
+
+(def response
+  (http/request
+   {:request-method :get
+    :uri "https://repo1.maven.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml"
+    }))
+
+(def xml
+  (xml/parse-str (:body response)))
+
+(def versions
+  (into []
+        (keep (fn [node]
+                (when (= (:tag node)
+                         :version)
+                  (first (:content node)))))
+        (xml-seq xml)))
+
+(def split-versions
+  (into []
+        (map (fn [version]
+               (vec
+                (str/split version
+                           #"\."))))
+        versions))
+
+(def maven3-versions
+  (filter
+   (fn [[major]]
+     (= major
+        "3"))
+   split-versions))
+
+(def version
+  ;; lastest maven3 version:
+  (str/join "." (last (sort maven3-versions))))
+
+(def download-url
+  (str "https://dlcdn.apache.org/maven/maven-3/"
+       version
+       "/binaries/apache-maven-"
+       version
+       "-bin.tar.gz"))
+
+(def tar-name
+  "maven.tar.gz")
+
+(def download-response
+  (http/request
+   {:request-method :get
+    :uri download-url
+    :as :stream
+    }))
+
+(with-open [in (:body download-response)]
+  (io/copy in
+           (io/file tar-name)))
+
+(comment
+  (shell "ls -lh")
+  )
+
+(shell "tar" "-xzf" tar-name)
+
+(shell "mv"
+       "-f"
+       (str "apache-maven-"
+            version)
+       "/opt/maven")
+
+(comment
+  (shell "ls -lh /opt/maven")
+  )
+
+(spit "/etc/profile.d/maven-path.sh"
+      "export PATH=$PATH:/opt/maven/bin/"
+      :append true)
