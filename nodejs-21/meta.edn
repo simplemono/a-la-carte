@@ -1,0 +1,2 @@
+{:name "nodejs-21"
+ :doc "Installs the NodeJS v21 (based on: https://github.com/nodesource/distributions#installation-instructions)"}
