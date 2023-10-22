@@ -1,0 +1,2 @@
+{:name "datomic"
+ :doc "Installs Datomic Pro (https://docs.datomic.com/pro/releases.html). The default version is `1.0.7021` use the environment variable `DATOMIC_VERSION` to change it."}
