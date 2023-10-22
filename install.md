@@ -137,3 +137,11 @@ Pip is a tool for installing Python packages. Installs pip for Python 3.
 ```bash
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/dc17eb5b2c3b4ddd38747b2a268913de242bfd6f/pip3/install' | bash
 ```
+
+## terraform
+
+Installs terraform.io (based on: https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/012be48aaf68f2048fab87e7bd2b7a91be2b30a1/terraform/install' | bash
+```
