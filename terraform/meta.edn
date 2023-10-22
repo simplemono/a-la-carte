@@ -1,0 +1,2 @@
+{:name "terraform"
+ :doc "Installs terraform.io (based on: https://learn.hashicorp.com/tutorials/terraform/install-cli)"}
