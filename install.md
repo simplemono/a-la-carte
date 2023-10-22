@@ -24,6 +24,14 @@ Clojure (https://clojure.org/guides/install_clojure#_linux_instructions)
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/aa29e3ea57a92817446be9a5a81faaca578f217c/clojure/install' | bash
 ```
 
+## datomic
+
+Installs Datomic Pro (https://docs.datomic.com/pro/releases.html). The default version is `1.0.7021` use the environment variable `DATOMIC_VERSION` to change it.
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/41b9c3d9c34793778c6292c5dd67660ab57e5e24/datomic/install' | bash
+```
+
 ## dev-user
 
 Adds an user `dev` who is allowed to use `sudo`. Thereby a Docker image must not run with `root` user during development.
