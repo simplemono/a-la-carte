@@ -98,6 +98,14 @@ Installs the latest version of [Maven3](https://maven.apache.org/) (requires Bab
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/60a01eb6466e06e8013120eb598b3246e9e6a1f3/maven3/install' | bb
 ```
 
+## nodejs-21
+
+Installs the NodeJS v21 (based on: https://github.com/nodesource/distributions#installation-instructions)
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/04e705c538397b4a8f425a60b21c21e70604411b/nodejs-21/install' | bash
+```
+
 ## OpenJDK 20
 
 Installs OpenJDK 20
