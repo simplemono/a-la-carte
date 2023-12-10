@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+apt-get -qq update
+apt-get -y -qq --no-install-recommends install ca-certificates gnupg curl
+
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
+
+apt-get -y -qq --no-install-recommends install nodejs
