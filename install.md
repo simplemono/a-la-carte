@@ -15,6 +15,14 @@ Installs caddyserver.com - A fast and extensible multi-platform
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/4ab9d35b9d037a8dbbe8e9e6978c4dcc43b8fb1b/caddy/install' | bash
 ```
 
+## clj-kondo
+
+Installs [clj-kondo](https://github.com/clj-kondo/clj-kondo).
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/999b9e4c1589e7faaa0d9537dc1fbbf56ab22f98/clj-kondo/install' | bash
+```
+
 ## Clojure CLI
 
 Installs the latest version of
@@ -98,6 +106,22 @@ Installs [git-lfs](https://git-lfs.com/) based on
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/d103e9aaa78085ce0bf000cbff6d2d12937db494/git-lfs/install' | bb
 ```
 
+## github-actions-runner
+
+Installs [GitHub Actions Runner](https://github.com/actions/runner).
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/3502add1da17d3e25e6bb14581d856c4a4c755d5/github-actions-runner/install' | bash
+```
+
+## kubectl
+
+Installs kubectl to manage Kubernetes.
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/9d1494c64d28637fdb866e6c928870a3009b7157/kubectl/install' | bash
+```
+
 ## maven3
 
 Installs the latest version of [Maven3](https://maven.apache.org/) (requires Babashka).
@@ -138,10 +162,26 @@ Pip is a tool for installing Python packages. Installs pip for Python 3.
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/dc17eb5b2c3b4ddd38747b2a268913de242bfd6f/pip3/install' | bash
 ```
 
+## redis
+
+Installs [redis](https://redis.io/).
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2e12fb272fad22a4229bd5abc2fb24e63f2ec59d/redis/install' | bash
+```
+
 ## terraform
 
 Installs terraform.io (based on: https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 ```bash
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/012be48aaf68f2048fab87e7bd2b7a91be2b30a1/terraform/install' | bash
+```
+
+## yarn
+
+Installs yarn (yarnpkg.com).
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/b1fee250b7e5182299917db28d91cd9a965dd179/yarn/install' | bash
 ```
