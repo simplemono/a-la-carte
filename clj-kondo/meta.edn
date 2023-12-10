@@ -1,0 +1,2 @@
+{:name "clj-kondo"
+ :doc "Installs [clj-kondo](https://github.com/clj-kondo/clj-kondo)."}

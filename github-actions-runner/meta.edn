@@ -1,0 +1,2 @@
+{:name "github-actions-runner"
+ :doc "Installs [GitHub Actions Runner](https://github.com/actions/runner)."}

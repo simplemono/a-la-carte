@@ -1,0 +1,2 @@
+{:name "yarn"
+ :doc "Installs yarn (yarnpkg.com)."}
