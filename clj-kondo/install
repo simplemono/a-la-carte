@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl https://raw.githubusercontent.com/clj-kondo/clj-kondo/master/script/install-clj-kondo | bash
