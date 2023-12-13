@@ -1,0 +1,2 @@
+{:name "google-cloud-profiler"
+ :doc "The Google Cloud Profiler for Java (see https://cloud.google.com/profiler/docs/profiling-java)"}
