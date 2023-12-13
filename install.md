@@ -114,6 +114,22 @@ Installs [GitHub Actions Runner](https://github.com/actions/runner).
 curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/3502add1da17d3e25e6bb14581d856c4a4c755d5/github-actions-runner/install' | bash
 ```
 
+## google-chrome
+
+Installs Google Chrome.
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/dbb0bb2f3ebd2b7f63ca86486eefb311149e3253/google-chrome/install' | bash
+```
+
+## google-cloud-profiler
+
+The Google Cloud Profiler for Java (see https://cloud.google.com/profiler/docs/profiling-java)
+
+```bash
+curl -sS 'https://raw.githubusercontent.com/simplemono/a-la-carte/2cd2afb10a523df25f8b4befb5caf96464d26651/google-cloud-profiler/install' | bash
+```
+
 ## kubectl
 
 Installs kubectl to manage Kubernetes.
